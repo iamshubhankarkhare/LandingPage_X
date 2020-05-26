@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <title>Caffiene</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>coffee</h1>
+        <div class="container" id="hamburger" onclick=" return myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div id="navContents">
+        <button id="typesBtn" onclick="showTypes()">
+            Types of coffee
+        </button>
+    </div>
+    <div class="homeContainer" id="homeContainer">
+        <h1>
+            homeContainer
+
+        </h1>
+
+    </div>
+
+
+
+
+    <div class="carouselContainer" id="carouselContainer">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h1> Item 1</h1>
+                </div>
+
+                <div class="item">
+                    <h1> Item 2</h1>
+                </div>
+
+                <div class="item">
+                    <h1> Item 3</h1>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        var isNavContent = false
+        const typesBtn = document.getElementById('typesBtn')
+        const homeContainer = document.getElementById("homeContainer")
+        const carouselContainer = document.getElementById("carouselContainer")
+        const navContents = document.getElementById("navContents")
+        const x = document.querySelectorAll('#carouselContainer, #homeContainer')
+        const hamburger = document.getElementById('hamburger')
+        x.forEach(element => {
+            element.addEventListener('click', () => {
+                if (isNavContent) {
+                    isNavContent = !isNavContent
+                    showNavContents();
+                    hamburger.classList.toggle("change")
+
+
+                }
+            })
+        });
+
+        const myFunction = (x) => {
+            x.classList.toggle("change");
+            isNavContent = !isNavContent
+            showNavContents();
+        }
+        const showNavContents = () => {
+            if (isNavContent) {
+                gsap.to(navContents, 1, {
+                    display: "block",
+                    opacity: 1,
+                    width: "350px",
+                    ease: Power2.easeInOut,
+                })
+            }
+            else {
+                gsap.to(navContents, 1, {
+                    display: "none",
+                    opacity: 0,
+                    width: "0px",
+                    ease: Power2.easeInOut,
+                })
+
+            }
+
+        }
+
+
+        const showTypes = () => {
+            gsap.to(homeContainer, {
+                display: "none",
+                ease: "power3.inOut"
+
+            })
+            gsap.to(carouselContainer, 3, {
+                display: "block",
+                opacity: 1,
+                ease: Power2.easeInOut,
+            })
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
