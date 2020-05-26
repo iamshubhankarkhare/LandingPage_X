@@ -24,9 +24,13 @@
         </div>
     </div>
     <div id="navContents">
+        <button id="homeBtn" class="navlink" onclick="showHome()">
+            Home
+        </button>
         <button id="typesBtn" class="navlink" onclick="showTypes()">
             Types of coffee
         </button>
+
     </div>
     <div class="homeContainer" id="homeContainer">
         <h1>Caffeine</h1>
@@ -220,7 +224,7 @@
         }
         const showNavContents = () => {
             if (isNavContent) {
-                gsap.to(navContents, 1, {
+                gsap.to(navContents, 1.2, {
                     display: "flex",
                     opacity: 1,
                     width: "350px",
@@ -243,14 +247,33 @@
         const showTypes = () => {
             gsap.to(homeContainer, {
                 display: "none",
+                opacity: 0,
                 ease: "power3.inOut"
 
             })
-            gsap.to(carouselContainer, 3, {
+            gsap.to(carouselContainer, 2, {
                 display: "flex",
                 opacity: 1,
                 ease: Power2.easeInOut,
             })
+            isNavContent = !isNavContent
+
+            showNavContents();
+        }
+        const showHome = () => {
+            gsap.to(homeContainer, 2, {
+                display: "flex",
+                opacity: 1,
+                ease: "power3.inOut"
+
+            })
+            gsap.to(carouselContainer, 2, {
+                display: "none",
+                opacity: 0,
+                ease: Power2.easeInOut,
+            })
+            isNavContent = !isNavContent
+            showNavContents();
 
         }
 
