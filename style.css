@@ -2,26 +2,46 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    background: rgb(19, 19, 19);
     overflow: hidden;
     background: url('./assests/coffe.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.navbar h1 {
+.navbar img {
     position: absolute;
-    left: 5%;
+    left: 0%;
+    height: 80px;
+    width: 80px;
 }
 
 #navContents {
+    margin-top: 1%;
     opacity: 0;
     display: none;
     height: 100vh !important;
     position: absolute;
-    background: gray;
+    background: rgba(97, 56, 23, 0.5);
     width: 0%;
     right: 0%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navlink {
+    z-index: 5;
+    margin: 10%;
+    background: transparent;
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(255, 255, 255, 0.8); */
+    border: none;
+    outline: none;
+    filter: none !important;
+}
+
+#typesBtn:active {
+    color: #eae2b7;
 }
 
 /* hamburger menu */
@@ -61,14 +81,50 @@ body {
 
 /* menu ends here */
 
+/* homeContainer starts here */
+
 .homeContainer {
-    color: white;
-    display: flex;
-    align-items: center;
     height: 100%;
     width: 100%;
     margin: 0%;
     padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeContainer h1 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5%;
+    margin-left: 5%;
+    letter-spacing: 5px;
+    font-weight: bolder !important;
+    font-family: Poppins;
+    font-size: 100px;
+}
+
+.bt-right {
+    justify-self: flex-end;
+    width: 20%;
+    align-self: flex-end;
+    margin-right: 5%;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+    font-family: Poppins;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+
+.bt-right h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+}
+
+.caffeineDescription {
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 1%;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .carouselContainer {
@@ -79,6 +135,15 @@ body {
     padding: 0px;
     height: 100vh;
     width: 100vw;
+}
+
+.carousel-indicators {
+    bottom: 100px;
+}
+
+.carousel-control {
+    background-image: none !important;
+    background-repeat: no-repeat !important;
 }
 
 #myCarousel {
@@ -95,5 +160,20 @@ body {
         background: url('./assests/coffe-01.jpeg');
         background-size: cover;
         background-position: center;
+    }
+    .homeContainer h1 {
+        font-size: 50px;
+        margin-top: 10%;
+    }
+    .caffeineDescription {
+        width: auto;
+        font-size: smaller;
+    }
+    .bt-right {
+        width: 50%;
+        margin-top: 15%;
+    }
+    #navContents {
+        background: rgba(97, 56, 23, 0.9);
     }
 }

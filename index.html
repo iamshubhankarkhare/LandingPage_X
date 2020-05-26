@@ -9,12 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
     <title>Caffiene</title>
 </head>
 
 <body>
     <div class="navbar">
-        <h1>coffee</h1>
+        <img src="./assests/coffeBeans2.png" />
         <div class="container" id="hamburger" onclick=" return myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -22,23 +24,33 @@
         </div>
     </div>
     <div id="navContents">
-        <button id="typesBtn" onclick="showTypes()">
+        <button id="typesBtn" class="navlink" onclick="showTypes()">
             Types of coffee
         </button>
     </div>
     <div class="homeContainer" id="homeContainer">
-        <h1>
-            homeContainer
-
-        </h1>
-
+        <h1>Caffeine</h1>
+        <div class="caffeineDescription">
+            <p>Caffeine is a natural stimulant most commonly found in tea, coffee and cacao plants.
+                Once consumed, caffeine is quickly absorbed from the gut into the bloodstream.
+                That being said, caffeine's main effect is on the brain.
+                Caffeine's main effect is on the brain. It stimulates the brain by<br> blocking the effects of
+                the<br>
+                neurotransmitter <br> adenosine.
+            </p>
+        </div>
+        <div class="bt-right">
+            <h2>Coffee</h2>
+            <p>The biggest determinant of the amount of caffeine in your coffee is the type of coffee that you drink.
+            </p>
+        </div>
     </div>
 
 
 
 
     <div class="carouselContainer" id="carouselContainer">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="5000">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -97,7 +109,7 @@
         const showNavContents = () => {
             if (isNavContent) {
                 gsap.to(navContents, 1, {
-                    display: "block",
+                    display: "flex",
                     opacity: 1,
                     width: "350px",
                     ease: Power2.easeInOut,
@@ -123,7 +135,7 @@
 
             })
             gsap.to(carouselContainer, 3, {
-                display: "block",
+                display: "flex",
                 opacity: 1,
                 ease: Power2.easeInOut,
             })
