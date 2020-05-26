@@ -15,196 +15,237 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="appContainer">
+        <div class="navbar">
 
-        <div class="container" id="hamburger" onclick=" return myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="container" id="hamburger" onclick=" return myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
-    </div>
-    <div id="navContents">
-        <button id="homeBtn" class="navlink" onclick="showHome()">
-            Home
-        </button>
-        <button id="typesBtn" class="navlink" onclick="showTypes()">
-            Types of coffee
-        </button>
+        <div id="navContents">
+            <button id="homeBtn" class="navlink" onclick="showHome()">
+                Home
+            </button>
+            <button id="typesBtn" class="navlink" onclick="showTypes()">
+                Types of coffee
+            </button>
+            <button id="typesBtn" class="navlink" onclick="showEffects()">
+                Effects
+            </button>
 
-    </div>
-    <div class="homeContainer" id="homeContainer">
-        <h1>Caffeine</h1>
-        <div class="caffeineDescription">
-            <p>Caffeine is a natural stimulant most commonly found in tea, coffee and cacao plants.
-                Once consumed, caffeine is quickly absorbed from the gut into the bloodstream.
-                That being said, caffeine's main effect is on the brain.
-                Caffeine's main effect is on the brain. It stimulates the brain by<br> blocking the effects of
-                the<br>
-                neurotransmitter <br> adenosine.
-            </p>
         </div>
-        <div class="bt-right">
-            <h2>Coffee</h2>
-            <p>The biggest determinant of the amount of caffeine in your coffee is the type of coffee that you drink.
-            </p>
+        <div class="homeContainer" id="homeContainer">
+            <h1>Caffeine</h1>
+            <div class="caffeineDescription">
+                <p>Caffeine is a natural stimulant most commonly found in tea, coffee and cacao plants.
+                    Once consumed, caffeine is quickly absorbed from the gut into the bloodstream.
+                    That being said, caffeine's main effect is on the brain.
+                    Caffeine's main effect is on the brain. It stimulates the brain by<br> blocking the effects of
+                    the<br>
+                    neurotransmitter <br> adenosine.
+                </p>
+            </div>
+            <div class="bt-right">
+                <h2>Coffee</h2>
+                <p>The biggest determinant of the amount of caffeine in your coffee is the type of coffee that you
+                    drink.
+                </p>
+            </div>
         </div>
-    </div>
 
 
 
 
-    <div class="carouselContainer" id="carouselContainer">
-        <!-- data-ride="carousel" -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause=" hover" data-interval="5000">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        <div class="carouselContainer" id="carouselContainer">
+            <!-- data-ride="carousel" -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause=" hover" data-interval="5000">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-            <div class="carousel-inner">
-                <div class="item active">
-                    <h1>Espresso</h1>
-                    <div class="description">
-                        <p>The espresso, also known as a short black, is approximately one ounce of highly concentrated
-                            coffee. Although simple in appearance,<br> it can be difficult<br> to master.</p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p>1 shot of espresso</p>
-                            <h2>Cup</h2>
-                            <p>2-4 oz. Espresso Cup</p>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h1>Espresso</h1>
+                        <div class="description">
+                            <p>The espresso, also known as a short black, is approximately one ounce of highly
+                                concentrated
+                                coffee. Although simple in appearance,<br> it can be difficult<br> to master.</p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p>1 shot of espresso</p>
+                                <h2>Cup</h2>
+                                <p>2-4 oz. Espresso Cup</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="item">
-                    <h1>Red Eye</h1>
-                    <div class="description">
-                        <p>The red eye's purpose is to add a boost of caffeine to your standard cup of coffee.</p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1 shot of espresso + 6 oz. of drip brewed coffee</p>
-                            <h2>Cup</h2>
-                            <p>8 oz. Coffee Mug</p>
+                    <div class="item">
+                        <h1>Red Eye</h1>
+                        <div class="description">
+                            <p>The red eye's purpose is to add a boost of caffeine to your standard cup of coffee.</p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1 shot of espresso + 6 oz. of drip brewed coffee</p>
+                                <h2>Cup</h2>
+                                <p>8 oz. Coffee Mug</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <h1>Black Eye</h1>
-                    <div class="description">
-                        <p>The black eye is just the doubled version of the red eye and is very high in caffeine.</p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 2 shots of espresso + 6 oz. of drip brewed coffee</p>
-                            <h2>Cup</h2>
-                            <p>8-10 oz. Coffee Mug</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h1>Macchiato</h1>
-                    <div class="description">
-                        <p>The word “macchiato” means mark or stain. This is in reference to the mark that steamed milk
-                            leaves on the surface of the espresso as it is dashed into the drink.</p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1 shot of espresso + 1 to 2 teaspoons of steamed milk</p>
-                            <h2>Cup</h2>
-                            <p> 3 oz. Glass Espresso Cup</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h1>Cappuccino</h1>
-                    <div class="description">
-                        <p>This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in the
-                            United States as well. </p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1-2 shots of espresso + 2 oz. of steamed milk + 2 oz. of foamed milk</p>
-                            <h2>Cup</h2>
-                            <p> 6-8 oz. Cappuccino Mug</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h1>Flat White</h1>
-                    <div class="description">
-                        <p>A flat white also originates from New Zealand and Australia and is very similar to a
-                            cappuccino but lacks the foam layer and chocolate powder. </p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1 shot of espresso + 4 oz. of steamed milk</p>
-                            <h2>Cup</h2>
-                            <p> 6 oz. Glass Tumbler</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h1>Cafe Latte</h1>
-                    <div class="description">
-                        <p>Cafe lattes are considered to be an introductory coffee drink since the acidity and
-                            bitterness of coffee is cut by the amount of milk in the beverage. </p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1 shot of espresso + 8-10 oz. of steamed milk + 1 cm of foam</p>
-                            <h2>Cup</h2>
-                            <p>14 oz. Mixing Glass</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h1>Mocha</h1>
-                    <div class="description">
-                        <p>1 shot of espresso + 1-2 oz. of chocolate syrup/powder + 1-3 oz. of steamed milk + 2-3 cm of
-                            foam or whipped cream </p>
-                    </div>
-                    <div class="ratioWrapper">
-                        <div class="ratioContainer">
-                            <h2>Ratio </h2>
-                            <p> 1 shot of espresso + 4 oz. of steamed milk</p>
-                            <h2>Cup</h2>
-                            <p> 6-8 oz Irish Coffee Mug
+                    <div class="item">
+                        <h1>Black Eye</h1>
+                        <div class="description">
+                            <p>The black eye is just the doubled version of the red eye and is very high in caffeine.
                             </p>
                         </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 2 shots of espresso + 6 oz. of drip brewed coffee</p>
+                                <h2>Cup</h2>
+                                <p>8-10 oz. Coffee Mug</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="item">
+                        <h1>Macchiato</h1>
+                        <div class="description">
+                            <p>The word “macchiato” means mark or stain. This is in reference to the mark that steamed
+                                milk
+                                leaves on the surface of the espresso as it is dashed into the drink.</p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1 shot of espresso + 1 to 2 teaspoons of steamed milk</p>
+                                <h2>Cup</h2>
+                                <p> 3 oz. Glass Espresso Cup</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Cappuccino</h1>
+                        <div class="description">
+                            <p>This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in
+                                the
+                                United States as well. </p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1-2 shots of espresso + 2 oz. of steamed milk + 2 oz. of foamed milk</p>
+                                <h2>Cup</h2>
+                                <p> 6-8 oz. Cappuccino Mug</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Flat White</h1>
+                        <div class="description">
+                            <p>A flat white also originates from New Zealand and Australia and is very similar to a
+                                cappuccino but lacks the foam layer and chocolate powder. </p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1 shot of espresso + 4 oz. of steamed milk</p>
+                                <h2>Cup</h2>
+                                <p> 6 oz. Glass Tumbler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Cafe Latte</h1>
+                        <div class="description">
+                            <p>Cafe lattes are considered to be an introductory coffee drink since the acidity and
+                                bitterness of coffee is cut by the amount of milk in the beverage. </p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1 shot of espresso + 8-10 oz. of steamed milk + 1 cm of foam</p>
+                                <h2>Cup</h2>
+                                <p>14 oz. Mixing Glass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Mocha</h1>
+                        <div class="description">
+                            <p>1 shot of espresso + 1-2 oz. of chocolate syrup/powder + 1-3 oz. of steamed milk + 2-3 cm
+                                of
+                                foam or whipped cream </p>
+                        </div>
+                        <div class="ratioWrapper">
+                            <div class="ratioContainer">
+                                <h2>Ratio </h2>
+                                <p> 1 shot of espresso + 4 oz. of steamed milk</p>
+                                <h2>Cup</h2>
+                                <p> 6-8 oz Irish Coffee Mug
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+
+        <div class="effectsContainer" id="effectsContainer">
+
+
+            <h1>The Good</h1>
+            <p>Recent studies have revealed that moderate coffee drinkers are less prone to developing type-2-diabetes
+                and Alzheimer’s disease. Caffeine is also believed to reduce the risk of getting Parkinson’s disease.
+
+                Excess coffee drinkers are 40 percent less likely to develop gout (a type of arthritis), while moderate
+                and light coffee drinkers are 8 percent less likely to develop the same condition.</p>
+            <h1>The Bad</h1>
+            <p>The negative effects of caffeine on quality sleep are well documented. As a result, it is recommended
+                that you don’t drink coffee 4-6 hours before sleeping.
+
+                Studies have also shown that coffee can cause gastric reflux and heartburn in susceptible individuals.
+                Coffee can also increase blood pressure, which is why it is not recommended for individuals suffering
+                from high blood pressure.
+
+                Excess coffee intake (540 mg of caffeine per day) can increase the urinary excretion of calcium and make
+                you prone to osteoporosis, especially if your calcium intake is deficient.</p>
+        </div>
+
+
     </div>
+
+
+
     <script>
         var isNavContent = false
         const typesBtn = document.getElementById('typesBtn')
         const homeContainer = document.getElementById("homeContainer")
+        const effectsContainer = document.getElementById("effectsContainer")
         const carouselContainer = document.getElementById("carouselContainer")
         const navContents = document.getElementById("navContents")
         const x = document.querySelectorAll('#carouselContainer, #homeContainer')
         const hamburger = document.getElementById('hamburger')
+        const width = window.innerWidth;
+        console.log(width);
+
         x.forEach(element => {
             element.addEventListener('click', () => {
                 if (isNavContent) {
@@ -256,8 +297,15 @@
                 opacity: 1,
                 ease: Power2.easeInOut,
             })
-            isNavContent = !isNavContent
+            gsap.to(effectsContainer, 2, {
+                display: "none",
+                opacity: 0,
+                background: "transparent",
 
+                ease: Power2.easeInOut,
+            })
+            isNavContent = !isNavContent
+            hamburger.classList.toggle("change")
             showNavContents();
         }
         const showHome = () => {
@@ -272,7 +320,41 @@
                 opacity: 0,
                 ease: Power2.easeInOut,
             })
+            gsap.to(effectsContainer, 2, {
+                display: "none",
+                opacity: 0,
+                background: "transparent",
+
+                ease: Power2.easeInOut,
+            })
             isNavContent = !isNavContent
+            hamburger.classList.toggle("change")
+
+            showNavContents();
+        }
+        const showEffects = () => {
+            gsap.to(homeContainer, 2, {
+                display: "none",
+                opacity: 0,
+                ease: "power3.inOut"
+
+            })
+            gsap.to(carouselContainer, 2, {
+                display: "none",
+                opacity: 0,
+                ease: Power2.easeInOut,
+            })
+            gsap.to(effectsContainer, 2, {
+                display: "flex",
+                opacity: 1,
+                background: "black",
+                ease: Power2.easeInOut,
+            })
+
+
+            isNavContent = !isNavContent
+            hamburger.classList.toggle("change")
+
             showNavContents();
 
         }

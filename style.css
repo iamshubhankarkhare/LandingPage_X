@@ -1,6 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
+}
+
+.appContainer {
+    margin: 0px;
+    padding: 0px;
     height: 100vh;
     overflow: hidden;
     background: url('./assests/coffe.jpg') no-repeat;
@@ -16,6 +21,7 @@ body {
 }
 
 #navContents {
+    z-index: 50;
     margin-top: 1%;
     flex-direction: column;
     opacity: 0;
@@ -201,6 +207,35 @@ body {
 
 .ratioContainer p {
     font-size: 20px;
+}
+
+/* effects container starts here */
+
+.effectsContainer {
+    height: 100vh;
+    opacity: 0;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    color: white;
+}
+
+.effectsContainer h1 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5%;
+    margin-left: 5%;
+    letter-spacing: 5px;
+    font-weight: bolder !important;
+    font-family: Poppins;
+    font-size: 50px;
+}
+
+.effectsContainer p {
+    margin-left: 5%;
+    width: 80%;
+    margin-top: 1%;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 @media(max-width:760px) {
