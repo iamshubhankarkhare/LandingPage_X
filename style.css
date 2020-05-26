@@ -92,6 +92,10 @@ body {
     flex-direction: column;
 }
 
+.homeContainer p {
+    font-size: 14px;
+}
+
 .homeContainer h1 {
     color: rgba(255, 255, 255, 0.5);
     margin-top: 5%;
@@ -99,7 +103,7 @@ body {
     letter-spacing: 5px;
     font-weight: bolder !important;
     font-family: Poppins;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 .bt-right {
@@ -116,7 +120,7 @@ body {
 
 .bt-right h2 {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .caffeineDescription {
@@ -127,6 +131,10 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/* data-ride="carousel" */
+
+/* caraouselcontainer statrs here */
+
 .carouselContainer {
     opacity: 0;
     display: none;
@@ -135,10 +143,6 @@ body {
     padding: 0px;
     height: 100vh;
     width: 100vw;
-}
-
-.carousel-indicators {
-    bottom: 100px;
 }
 
 .carousel-control {
@@ -151,8 +155,50 @@ body {
     width: 100%;
 }
 
+.carousel-inner {
+    height: 100% !important;
+}
+
+.item {
+    height: 100% !important;
+}
+
 .item h1 {
     color: rgba(255, 255, 255, 0.5);
+    font-size: 120px;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    margin-left: 10%;
+}
+
+.description {
+    width: 20%;
+    margin-left: 10%;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 2%;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.ratioWrapper {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 100px;
+}
+
+.ratioContainer {
+    margin-right: 3%;
+    width: 30%;
+}
+
+.ratioContainer h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.ratioContainer p {
+    font-size: 20px;
 }
 
 @media(max-width:760px) {
@@ -171,9 +217,20 @@ body {
     }
     .bt-right {
         width: 50%;
-        margin-top: 15%;
+        margin-top: 50%;
     }
     #navContents {
         background: rgba(97, 56, 23, 0.9);
+    }
+    .item h1 {
+        font-size: 60px;
+        font-weight: bolder;
+        letter-spacing: 3px;
+    }
+    .description {
+        width: 50%;
+    }
+    .ratioContainer {
+        margin-top: 50%;
     }
 }
